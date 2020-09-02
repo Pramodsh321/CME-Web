@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoaderService } from './app-core/services/loader.service';
-import { using } from 'rxjs';
-import {LoaderComponent} from './assets/loader/loader.component'
+import {LoaderComponent} from './assets/loader/loader.component';
 
 @NgModule({
   declarations: [

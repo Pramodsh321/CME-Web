@@ -7,6 +7,10 @@ const routes: Routes = [
     path: 'account', loadChildren: () => import('./account/account.module').then(m => m.AccountModule),
     data: { preload: true }
   },
+  {
+    path: 'resolution', loadChildren: () => import('./app/resolution/resolution.module').then(m => m.ResolutionModule),
+    data: { preload: true }
+  },
   { path: '', redirectTo: 'account/login', pathMatch: 'full' }
 ];
 
