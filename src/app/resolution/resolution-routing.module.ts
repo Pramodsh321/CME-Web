@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ResolutionTypesComponent } from './resolution-types/resolution-types.component';
-import { ResolutionComponent } from './resolution.component';
+const routes: Routes = [
+  { path: 'resolutiontypes', component: ResolutionTypesComponent}
+];
 
 @NgModule({
-  imports: [RouterModule.forChild([{ path: '', component: ResolutionComponent, children: [{ path: 'resolutiontypes', component: ResolutionTypesComponent }] }])],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class ResolutionRoutingModule { }
